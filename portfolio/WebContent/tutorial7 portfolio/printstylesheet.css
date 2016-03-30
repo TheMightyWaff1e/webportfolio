@@ -1,0 +1,52 @@
+/* stylesheet for printouts */
+
+nav, header{
+	display: none;
+	
+}
+@page{
+	size: 8.5in 11in;
+	margin: 0.5in;
+}
+
+/* formats page for printing  */
+
+body{
+	color: black;
+	background-image: none;
+	background-color: white;
+	font-size: 12pt;
+	font-family: "Time New Roman", Times, serif;
+	line-height: 120%;
+}
+p, footer, h1, h2, h3, h4, h5, h6, a{
+	color: black;
+	background-image: none;
+	background-color: white;
+	font-size: 12pt;
+	font-family: "Time New Roman", Times, serif;
+	line-height: 120%;
+}
+
+/* set links to defaut colors */
+
+a, a:link{
+	text-decoration: underline;
+	color: blue;
+}
+
+ #projectscontent, .aboutmeleft, .aboutmeright {
+	float:none;
+	border:none;
+	width: 100%;
+	text-align: left;
+}
+.aboutmeimg, .wordle{
+	float:none;
+	border:none;
+	text-align: left;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+

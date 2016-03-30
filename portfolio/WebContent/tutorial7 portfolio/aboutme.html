@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaime Martin Portfolio</title>
+<link type="text/css" rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="printstylesheet.css" type="text/css" media="print"  />
+<link rel="shortcut icon" href="images/logoinv.png" />
+
+</head>
+<body>
+	
+<header>
+<a href="index.html">
+	<img class="logo" alt="Logo" src="images/logoinv.png"/>
+	</a> 
+		
+	<h1>Jaime Martin</h1>
+	</header>
+	<nav id="clear">	
+		<ul>
+	<li><a href ="index.html">Home</a></li>
+	<li><a href ="aboutme.html">About Me</a></li>
+    <li><a >Projects</a>
+    	<ul>
+		<li><a href="webdesign.html">Web Design</a></li>
+		<li><a href="cplusplus.html">C++</a></li>
+		<li><a href="java.html">Java</a></li>
+		<li><a href="3dmodeling.html">3D Modeling</a></li>
+		<li><a href="unity.html">Unity</a></li>
+		<li><a href="otherprojects.html">Other</a></li>
+		</ul>
+		</li>
+    <li><a href ="bpa.html">BPA</a></li>
+	<li><a href ="badges.html">Badges</a></li>
+	<li><a href="discussion.html">Discussion</a></li>
+	</ul>
+	</nav>
+
+<div id="container">
+<section>
+	<h3>About Me</h3>
+	
+	<div class="aboutmeleft">
+	<figure>
+		<img class="aboutmeimg" src="images/jmartin.png" alt="Picture of me" title="Picture of me"> 
+	</figure>
+	
+	<article>
+		<p>I am currently a student at Miami Valley Career Technical Center(MVCTC) for 
+			Game Programming and Web Applications. We will be learning C++, Java, Web Development,
+			 Unity, and I live in Miamisburg and my homeschool is Miamisburg High School. 
+			I have one pet cat named Bella. My hobbies include programming, playing video games, and reading. </p>
+	</article>
+	</div>
+	
+	<div class="aboutmeright">
+	<article>
+		<figure>
+		<img src="images/word.jpeg" alt="word cloud"  title="word cloud" class="wordle"> 
+	</figure>
+	</article>
+	<article>
+		<div id="map">
+			
+		</div>
+		
+	<script>
+      function initMap() {
+      	var LatLng= {lat: 39.845790, lng: -84.328882};
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: LatLng,
+          zoom: 16
+        });
+        var marker = new google.maps.Marker({
+    position: LatLng,
+    map: map,
+    title: 'MVCTC'
+  });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+	</article>
+</div>
+
+</section>
+</div>
+
+<footer>&copy; Copyright 2016 Jaime Martin <a href="mailto:jaime.martin013@gmail.com">jaime.martin013@gmail.com</a> All Rights Reserved</footer>
+</body>
+</html>
